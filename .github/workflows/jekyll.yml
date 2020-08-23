@@ -8,18 +8,22 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
 
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build using Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: npm ci
+      - run: npm run build
+
+  publish:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build using Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-    - run: npm ci
-    - run: npm run build
-    - run: ls -l
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
