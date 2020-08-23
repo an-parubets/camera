@@ -13,12 +13,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
+    - name: Build using Node.js
+      uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: npm run build
-    - run: |
+    - run: npm run build --if-present
+    - name: Build the site in the jekyll/builder container
+      run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
