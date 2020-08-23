@@ -16,9 +16,9 @@ jobs:
     - name: Build the site in the jekyll/builder container
       with:
         node-version: 12.x
-      run: |
-        npm ci
-        npm run build
+    - run: npm ci
+    - run: npm run build
+    - run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
