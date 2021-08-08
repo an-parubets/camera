@@ -175,8 +175,6 @@ body.open > .shadow {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
-  .link span {
-    text-transform: uppercase; }
   .link:hover {
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2); }
 
