@@ -1,19 +1,19 @@
-import babel from "rollup-plugin-babel";
-import scss from "rollup-plugin-scss";
+import babel from 'rollup-plugin-babel';
+import scss from 'rollup-plugin-scss';
 
 export default {
-  input: "src/index.js",
+  input: 'src/index.js',
   output: {
-    file: "build/bundle.js",
-    format: "iife",
-    sourcemap: "inline",
+    file: 'build/bundle.js',
+    format: 'iife',
+    sourcemap: 'inline',
   },
   plugins: [
     babel({
-      exclude: "node_modules/**",
+      exclude: 'node_modules/**',
     }),
     scss({
-      output: "build/styles.css",
+      output: 'build/styles.css',
     }),
   ],
 };

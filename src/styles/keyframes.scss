@@ -1,109 +1,109 @@
 @-webkit-keyframes led {
   from {
-    opacity:.2;
+    opacity: 0.2;
   }
 
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes led {
   from {
-    opacity:.2;
+    opacity: 0.2;
   }
 
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-ms-keyframes led {
   from {
-    opacity:.2;
+    opacity: 0.2;
   }
 
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes led {
   from {
-    opacity:.2;
+    opacity: 0.2;
   }
 
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @keyframes led {
   from {
-    opacity:.2;
+    opacity: 0.2;
   }
 
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes btn {
   from {
-    margin-top:0px;
+    margin-top: 0px;
     top: 22px;
   }
 
   to {
-    margin-top:2px;
-    box-shadow: 0px 1px 0px rgba(0,0,0,.4);
+    margin-top: 2px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
   }
 }
 
 @-moz-keyframes btn {
   from {
-    margin-top:0px;
+    margin-top: 0px;
     top: 22px;
   }
 
   to {
-    margin-top:2px;
-    box-shadow: 0px 1px 0px rgba(0,0,0,.4);
+    margin-top: 2px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
   }
 }
 
 @-ms-keyframes btn {
   from {
-    margin-top:0px;
+    margin-top: 0px;
     top: 22px;
   }
 
   to {
-    margin-top:2px;
-    box-shadow: 0px 1px 0px rgba(0,0,0,.4);
+    margin-top: 2px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
   }
 }
 
 @-o-keyframes btn {
   from {
-    margin-top:0px;
+    margin-top: 0px;
     top: 22px;
   }
 
   to {
-    margin-top:2px;
-    box-shadow: 0px 1px 0px rgba(0,0,0,.4);
+    margin-top: 2px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
   }
 }
 
 @keyframes btn {
   from {
-    margin-top:0px;
+    margin-top: 0px;
     top: 22px;
   }
 
   to {
-    margin-top:2px;
-    box-shadow: 0px 1px 0px rgba(0,0,0,.4);
+    margin-top: 2px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
   }
 }

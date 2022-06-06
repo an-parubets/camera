@@ -1,3 +1,1 @@
 # Camera
-
-test text
